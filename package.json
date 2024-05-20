@@ -1,8 +1,9 @@
 {
   "name": "shell-bistro",
   "version": "1.0.0",
-  "description": "CLI toolkit of useful shell command recipes written in TypeScript.",
+  "description": "CLI toolkit of useful shell command recipes written in JavaScript.",
   "main": "dist/index.js",
+  "bin": "bin/shell-bistro",
   "scripts": {
     "start": "node --loader ts-node/esm src/index.ts",
     "build": "tsc -p tsconfig.json",

@@ -1,11 +1,13 @@
 import { Command } from 'commander';
 import { spinnerError, spinnerStop } from './spinner.js';
-//import { widgets } from './widgets';
+// Commands
+import { command as multimediaFileArrange } from './commands/multimedia-file-arrange.js';
+
 const program = new Command();
-program.description('Our New CLI');
+program.description('Shell command recipes written in JavaScript');
 program.option('-v, --verbose', 'verbose logging');
-program.version('0.0.1', '--version', 'output the current version');
-//program.addCommand(widgets);
+program.version('1.0.0', '--version', 'output the current version');
+program.addCommand(multimediaFileArrange);
 
 async function main() {
   await program.parseAsync();
